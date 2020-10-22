@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#03a6f3">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style type="text/css">
+
+.cart_container
+{
+
+	background: #f0f0f0;
+	margin:5px;
+	padding: 20px;
+	width:100%; /* or whatever width you want. */
+  	max-width: 100%
+  	length:260px;
+
+
+}
+.cart_items{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+.row_button {
+    margin-left: 880px;
+    padding-left: 32px;
+
+}
+
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 25px 16px;
+}
+
+.container_inside {
+  background-color: #f2f2f2;
+  padding: 10px 20px 25px 35px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+.notice{
+	padding: 12px;
+    color: #ff9700;
+    font-style: unset;
+    font-size: 16px;
+    font-family: unset;
+}
+</style>
+</head>
+
+<body>
+    <header>
+
+        <div class="main-menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="navbar-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="shop.html" class="nav-link">Shop</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Profile</a>
+
+                            </li>
+                        </ul>
+                        <div class="cart my-2 my-lg-0">
+                            <span>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="quntity">3</span>
+                        </div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                            <span class="fa fa-search"></span>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumb">
+        <div class="container">
+            <a class="breadcrumb-item" href="index.html">Home</a>
+            <span class="breadcrumb-item active">CART</span>
+        </div>
+    </div>
+
+    <div class="container">
+    	<span class ="notice"> Please double click on the product to remove from the cart</span>
+
+
+    </div>
+
+
+
+
+
+	         <div class="col-25">
+		        <div class="container">
+		          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b id ="total_price">0.0</b></span></h4>
+		          <br>
+		          <div class ="cart_container">
+		          <p class = "cart_item"><a href="#" id ="cart_items"> Product 1</a> <span id ="item_price" class="price">100</span></p>
+		          <p class = "cart_item"><a href="#"id ="cart_items"> Product 2</a> <span id ="item_price" class="price">100</span></p>
+		          <p class = "cart_item"><a href="#" id ="cart_items"> Product 3</a> <span id ="item_price" class="price">100</span></p>
+		          <p class = "cart_item"><a href="#" id ="cart_items"> Product 4</a> <span id ="item_price" class="price">100</span></p>
+		          <p class = "cart_item"> <a href="#" id ="cart_items"> Product 5</a> <span id ="item_price" class="price">100</span></p>
+		          <p class = "cart_item"><a href="#" id ="cart_items"> Product 6</a> <span id ="item_price" class="price">100</span></p>
+		          </div>
+		          <hr>
+		          <p >Total <span class="price" style="color:black"><b>Rs </b><b class="price"  id = "total_price">0.0</b><b> /=</b></span></p>
+		        </div>
+	      </div>
+
+
+
+    <div class="row_button">
+      <div class="col-75">
+       <input type="submit" value="Continue to checkout" class="btn">
+        <a href="#" onclick="clearallitems()" class="btn black">CLEAR</a>
+        </div>
+     </div>
+
+
+
+
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="address">
+                        <h4>Our Address</h4>
+                        <h6>The BookStore, PES University </h6>
+                        <h6>Call : 000 000 000</h6>
+                        <h6>Email : info@bookstore.com</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="navigation">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms</a></li>
+                            <li><a href="products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigation">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="">Shipping & Returns</a></li>
+                            <li><a href="privacy-policy.html">Privacy</a></li>
+                            <li><a href="faq.html">FAQ’s</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form">
+                        <h3>Quick Contact us</h3>
+                        <h6>We are now offering some good discount
+                            on selected books go and shop them</h6>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea placeholder="Messege"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn black">Alright, Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>(C) 2019. All Rights Reserved. BookStore W</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="share align-middle">
+                            <span class="fb"><i class="fa fa-facebook-official"></i></span>
+                            <span class="instagram"><i class="fa fa-instagram"></i></span>
+                            <span class="twitter"><i class="fa fa-twitter"></i></span>
+                            <span class="pinterest"><i class="fa fa-pinterest"></i></span>
+                            <span class="google"><i class="fa fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    	function clearallitems(){
+
+    		var items = document.querySelectorAll('.cart_item');
+    		var price = document.querySelectorAll('.price')
+    		var i;
+    		for( i = 0; i<items.length ;i++)
+    		{
+    			items[i].innerHTML = "";
+    			price[i].innerHTML="";
+    		}
+    		var items = document.querySelector('.cart_container').innerHTML ="NO ITEMS";
+
+
+    	}
+
+    	var cart_items =document.querySelectorAll('.cart_item');
+
+    	cart_items.forEach(function(ITEM)
+    		{
+
+    			ITEM.addEventListener('dblclick',function(e)
+    			{
+    				delete_item(ITEM);
+
+    			},false);
+    		});
+
+    	function delete_item(item)
+    	{
+    		var prom = window.confirm("Do you want to remove this item?");
+    		if(prom== true)
+    		{
+    			item.innerHTML ="";
+    		}
+    	}
+
+
+    	var total_price_tags = document.querySelectorAll('#item_price');
+    	var total_price = 0;
+    	total_price_tags.forEach(function(item)
+    	{
+
+    		total_price = total_price+parseInt(item.innerHTML);
+
+    	});
+    	document.querySelectorAll('#total_price').forEach(function(item)
+    		{
+    			item.innerHTML= total_price;
+    		});
+
+
+
+    </script>
+</body>
+
+</html>

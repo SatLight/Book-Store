@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store| My Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#03a6f3">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <style type="text/css">
+
+
+
+    .card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  max-width: 300px;
+	  margin: auto;
+	  text-align: center;
+
+	}
+
+	.title {
+	  color: grey;
+	  font-size: 18px;
+	}
+
+	.whole_container{
+
+		margin-top: -60px;
+		margin-bottom: 15px;
+		display: inline-block;
+
+	}
+	.container-left{
+
+		margin-top: 65px;
+		margin-left: 65px;
+		padding-bottom: 65px;
+		float: left;
+		margin-bottom: 55px;
+
+
+	}
+
+	.container-right{
+		overflow: hidden;
+		margin-top: 65px;
+		float: right;
+
+		margin-left: 37px;
+    	width: 920px;
+		height: auto;
+   		display: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.head_wrapper .top-container{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 8px;
+		color: white;
+		background: black;
+	}
+	.top-container h3{
+		padding: 11px;
+		size: 16px;
+		padding-left: 29px;
+	}
+
+	.Profileimage{
+		padding: 20px;
+	}
+	.avtar{
+		vertical-align: middle;
+ 		 width: 150px;
+  		height: 150px;
+  		border-radius: 50%;
+	}
+
+  .body_wrapper{
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .text-center{
+    padding-top: 2px;
+
+  }
+  .form-horizontal{
+    padding: 9px;
+  }
+
+  .cart-List{
+
+    margin: 15px;
+
+  }
+
+.cart-item{
+  padding: 15px;
+
+  box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.cart-item .product-item{
+  padding-left: 15px;
+  text-decoration: none;
+
+}
+.cart-item .product-price{
+float: right;
+padding-right: 25px;
+align-items: center;
+
+}
+.favourite-btn{
+  display: inline-block;
+  border-radius: 4px;
+ padding: 5px;
+ width: 52px;
+}
+
+.product-review{
+	padding: 12px;
+
+}
+
+.review-icons{
+
+	width: 25px;
+}
+
+.product-item-right{
+	margin-left: 50px;
+
+}
+
+
+.product-item
+{
+    margin-left: 50px;
+}
+
+.product-comment{
+float: right;
+margin-right: 40px;
+
+}
+
+
+.message-subject{
+	margin-left: 65px;
+	margin-bottom: 2px;
+
+}
+.message .product-item{
+	color:black;
+}
+.message .unread-tag{
+	display: none
+}
+
+.message:hover{
+	background:black ;
+	color: black
+	height:25px;
+
+}
+.message:hover .product-item{
+	color: white;
+	text-size: 50px;
+
+}
+.message:hover .message-subject{
+	display: inline-block;
+	color: white
+}
+
+.unread{
+	color:#007bff;;
+}
+
+.unread .unread-tag {
+	display: inline;
+	align-items: center;
+	color: #007bff;
+
+	vertical-align: -3px;
+}
+
+.unread .product-item{
+	font-size: 18px;
+	margin-left: 27px;
+	color: #007bff;
+}
+
+
+
+.unread-tag {
+	size:45px;
+	color: #007bff;
+}
+
+
+
+.message:hover .unread-tag{
+	color :black;
+}
+
+
+.message-icon{
+	width : 35px;
+	float: right;
+	margin-top: -47px;
+	margin-right: 10px;
+}
+
+
+
+     </style>
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="main-menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="navbar-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="shop.html" class="nav-link">Shop</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="#" class="nav-link">Account</a>
+
+                            </li>
+                        </ul>
+                        <div class="cart my-2 my-lg-0">
+                            <span>
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                            <span class="quntity">3</span>
+                        </div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                            <span class="fa fa-search"></span>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumb">
+        <div class="container">
+            <a class="breadcrumb-item" href="index.html">Home</a>
+            <span class="breadcrumb-item active">My Account</span>
+        </div>
+    </div>
+
+
+    <div class ="whole_container">
+	    <div class = "container-left">
+		   <div class="card">
+			  <img src="images/team2.jpg" alt="John" style="width:100%">
+			  <h1 style ="padding-top: 22px">Jane Bishop</h1>
+
+			  <p class="user_email_address" style="padding-top: 6px">janesemail@gmail.com</p>
+
+			    <div class="grid-container">
+				  <p><button  id = "show-favourites" style ="width: 270px"class="btn black ">Favourites</button></p>
+				  <p><button id ="show-bought" style ="width: 270px"class="btn black ">Books Bought</button></p>
+				  <p><button id ="show-rentals" style ="width: 270px"class="btn  black">Books Rented</button></p>
+				  <p><button id="show-edit"style ="width: 270px"class="btn  black">Edit Profile</button></p>
+				  <p><button id="show-messages"style ="width: 270px"class="btn  black">Messages</button></p>
+			    </div>
+		    </div>
+		</div>
+
+
+
+	<div  class = "container-right" id ="show-Messages-section">
+       <div class="head_wrapper">
+          <div class="top-container">
+            <h3> Messages</h3>
+            <div class="message">
+            	<img onclick="openMessageSender()" class = "message-icon" src="images/newmessage.png">
+
+            	
+				  
+            	
+            </div>
+          </div>
+       </div>
+
+       <div class="body_wrapper">
+
+            <div class="cart-List">
+
+            <div class="rows">
+              <div class="cart-item message unread">
+                <span class="unread-tag"><b> > </b></span>
+                <a href="#"  id ="rp1" class ="product-item"> Senders Name </a><br><span  class="message-subject"> Subject</span>
+              </div>
+
+             
+
+
+
+            </div>
+
+          </div>
+
+
+          </div>
+    </div>
+
+
+		<div  class = "container-right" id ="favourites-section">
+		   <div class="head_wrapper">
+			   	<div class="top-container">
+			   		<h3> Favourites</h3>
+			   	</div>
+		   </div>
+
+		   <div class="body_wrapper">
+
+		   		<div class="cart-List">
+
+		   			<div class="rows">
+		   				<div class="cart-item">
+		   					<span class="favourite-btn"><img value = "liked" class = "unfavourite"  src="images/liked-fav.png"> </span><a href="#" class ="product-item"> Product 1 </a>
+		   				</div>
+		   				<div class="cart-item">
+		   					<span class="favourite-btn"><img value = "liked" class = "unfavourite" src="images/liked-fav.png"> </span><a href="#" class ="product-item"> Product 2 </a>
+		   				</div>
+		   				<div class="cart-item">
+		   					<span class="favourite-btn"><img value = "liked" class = "unfavourite" src="images/liked-fav.png"> </span><a href="#" class ="product-item"> Product 3 </a>
+		   				</div>
+		   				<div class="cart-item">
+		   					<span class="favourite-btn"><img value = "liked" class = "unfavourite" src="images/liked-fav.png"> </span><a href="#" class ="product-item"> Product 4 </a>
+		   				</div>
+
+		   				</div>
+
+
+
+		   			</div>
+
+		   		</div>
+
+
+		</div>
+
+
+
+
+
+
+		<div  class = "container-right" id ="booksbought-section">
+		   <div class="head_wrapper">
+			   	<div class="top-container">
+			   		<h3> Previous Orders</h3>
+			   	</div>
+		   </div>
+
+		   <div class="body_wrapper">
+		   		<div class="cart-List">
+
+		   			<div class="rows">
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 1 </a><span class="product-price"> 500</span>
+		   				</div>
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 2 </a><span class="product-price"> 500</span>
+		   				</div>
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 3</a><span class="product-price"> 500</span>
+		   				</div>
+
+
+
+		   			</div>
+
+		   		</div>
+	      </div>
+		</div>
+		<div  class = "container-right" id ="rented-section">
+		    <div class="head_wrapper">
+			   	<div class="top-container">
+			   		<h3> Books Rented</h3>
+			   	</div>
+		   </div>
+
+		   <div class="body_wrapper">
+		   		<div class="cart-List">
+
+		   			<div class="rows">
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 1 </a><span class="product-price"> 500</span>
+		   				</div>
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 2 </a><span class="product-price"> 500</span>
+		   				</div>
+		   				<div class="cart-item">
+		   					<a href="#" class ="product-item"> Product 3</a><span class="product-price"> 500</span>
+		   				</div>
+
+
+
+		   			</div>
+
+		   		</div>
+	      </div>
+
+
+		</div>
+
+
+		<div class = "container-right" id ="editprofile-section">
+
+		   <div class="head_wrapper">
+			   	<div class="top-container">
+			   		<h3> Personal Info</h3>
+			   	</div>
+		   </div>
+
+		   <div class="body_wrapper">
+		 	 <div class="container">
+				<div class="row">
+			      <!-- left column -->
+				      <div class="col-md-3">
+				        <div class="text-center">
+				          <img src="images/team2.jpg" alt="John"  class ="avtar">
+				          <h6 style="padding-top: 9px;">Upload a different photo...</h6>
+				          <input type="file" class="form-control">
+				      	</div>
+				      </div>
+
+		 			<div class="col-md-9 personal-info">
+				        <form class="form-horizontal" role="form">
+				          <div class="form-group">
+				            <label class="col-lg-3 control-label">First name:</label>
+				            <div class="col-lg-8">
+				              <input class="form-control" type="text" value="Jane">
+				            </div>
+				          </div>
+				          <div class="form-group">
+				            <label class="col-lg-3 control-label">Last name:</label>
+				            <div class="col-lg-8">
+				              <input class="form-control" type="text" value="Bishop">
+				            </div>
+				          </div>
+
+				          <div class="form-group">
+				            <label class="col-lg-3 control-label">Email:</label>
+				            <div class="col-lg-8">
+				              <input class="form-control" type="text" value="janesemail@gmail.com">
+				            </div>
+				          </div>
+
+				          <div class="form-group">
+				            <label class="col-md-3 control-label">Username:</label>
+				            <div class="col-md-8">
+				              <input class="form-control" type="text" value="janeuser">
+				            </div>
+				          </div>
+
+				           <div class="form-group">
+				            <label class="col-md-3 control-label">Address:</label>
+				            <div class="col-md-8">
+				              <input class="form-control" type="text" value="Street Lane, California">
+				            </div>
+				          </div>
+
+				          <div class="form-group">
+				            <label class="col-md-3 control-label">Password:</label>
+				            <div class="col-md-8">
+				              <input class="form-control" type="password" value="11111122333">
+				            </div>
+				          </div>
+				          <div class="form-group">
+				            <label class="col-md-3 control-label">Confirm password:</label>
+				            <div class="col-md-8">
+				              <input class="form-control" type="password" value="11111122333">
+				            </div>
+				          </div>
+				          <div class="form-group">
+				            <label class="col-md-3 control-label"></label>
+				            <div class="col-md-8">
+				              <input type="button" class="btn black" value="Save Changes">
+				              <span></span>
+				              <input type="reset" class="btn " value="Cancel">
+				            </div>
+				          </div>
+				        </form>
+		      		</div>
+			  </div>
+			</div>
+			</div>
+		</div>
+
+
+		<div  style = "display: inline-block;" class = "container-right" id ="rating-section">
+		   <div class="head_wrapper">
+			   	<div class="top-container">
+			   		<h3>Rate your experience </h3>
+			   	</div>
+		   </div>
+
+		   <div class="body_wrapper">
+
+				<div class = "recent-order-reviews" >
+
+		   		<div class="cart-item">
+                	<div  id = "r1"class="product-review">
+                    <img class = "review-icons" src="images/star_unrated.png" id="1"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="2"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="3"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="4"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="5"/>
+                    <span value = "1" class ="product-item"> Product 1 </span>
+                    <span id = "p1" class ="product-comment"> Amazing, must try! </span>
+                	</div>
+
+
+		   		</div>
+
+		   	</div>
+
+
+		   		<div class = "recent-order-reviews" >
+
+		   		<div class="cart-item">
+                	<div id = "r2" class="product-review">
+                    <img class = "review-icons" src="images/star_unrated.png" id="1"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="2"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="3"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="4"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="5"/>
+                    <span value = "2" class ="product-item"> Product 2 </span>
+                    <span id = "p2" class ="product-comment"> Amazing, must try! </span>
+                	</div>
+
+
+		   		</div>
+
+		   			<div class="cart-item">
+                	<div  id = "r3" class="product-review">
+                    <img class = "review-icons" src="images/star_unrated.png" id="1"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="2"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="3"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="4"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="5"/>
+                    <span value = "3" class ="product-item"> Product 3 </span>
+                    <span id = "p3" class ="product-comment"> Amazing, must try! </span>
+                	</div>
+		   			</div>
+
+		   			<div class="cart-item">
+                	<div  id = "r4" class="product-review">
+                    <img class = "review-icons" src="images/star_unrated.png" id="1"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="2"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="3"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="4"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="5"/>
+                    <span value = "4" class ="product-item"> Product 4 </span>
+                    <span id = "p4" class ="product-comment"> Amazing, must gggtry! </span>
+                	</div>
+		   			</div>
+
+		   			<div class="cart-item">
+                	<div  id = "r5" class="product-review">
+                    <img class = "review-icons" src="images/star_unrated.png" id="1"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="2"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="3"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="4"/>
+                    <img class = "review-icons" src="images/star_unrated.png" id="5"/>
+                    <span value = "5" class ="product-item"> Product 5 </span>
+                    <span id = "p5" class ="product-comment"> Amazing, must try! </span>
+                	</div>
+		   			</div>
+
+		   	</div>
+
+
+	      </div>
+		</div>
+
+
+    </div>
+
+
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="address">
+                        <h4>Our Address</h4>
+                        <h6>The BookStore, PES University </h6>
+                        <h6>Call : 000 000 000</h6>
+                        <h6>Email : info@bookstore.com</h6>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="navigation">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms</a></li>
+                            <li><a href="products.html">Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigation">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="">Shipping & Returns</a></li>
+                            <li><a href="privacy-policy.html">Privacy</a></li>
+                            <li><a href="faq.html">FAQ’s</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form">
+                        <h3>Quick Contact us</h3>
+                        <h6>We are now offering some good discount
+                            on selected books go and shop them</h6>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea placeholder="Messege"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn black">Alright, Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>(C) 2019. All Rights Reserved. BookStore W</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="share align-middle">
+                            <span class="fb"><i class="fa fa-facebook-official"></i></span>
+                            <span class="instagram"><i class="fa fa-instagram"></i></span>
+                            <span class="twitter"><i class="fa fa-twitter"></i></span>
+                            <span class="pinterest"><i class="fa fa-pinterest"></i></span>
+                            <span class="google"><i class="fa fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+
+
+
+		$('#show-favourites').click(function() {
+        $('#rating-section').hide(0)
+    	$('#booksbought-section').hide(0);
+    	$('#rented-section').hide(0);
+    	$('#editprofile-section').hide(0);
+    	$('#show-Messages-section').hide(0);
+    	$('#favourites-section').show(1,"linear");
+    	$('#favourites-section').fadeIn(300);
+
+
+		});
+
+		$('#show-messages').click(function() {
+      	$('#rating-section').hide(0)
+    	$('#booksbought-section').hide(0);
+    	$('#rented-section').hide(0);
+    	$('#editprofile-section').hide(0);
+    	$('#favourites-section').hide(0);
+    	$('#show-Messages-section').show(1,"linear");
+    	$('#show-Messages-section').fadeIn(300);
+
+
+		});
+
+
+		$('#show-bought').click(function() {
+      $('#rating-section').hide(0);
+      $('#show-Messages-section').hide(0);
+    	$('#favourites-section').hide(0);
+    	$('#rented-section').hide(0);
+    	$('#editprofile-section').hide(0);
+    	$('#booksbought-section').show(1,"linear");
+    	$('#booksbought-section').fadeIn(300)
+
+
+		});
+
+		$('#show-rentals').click(function() {
+			$('#show-Messages-section').hide(0);
+      $('#rating-section').hide(0)
+		$('#booksbought-section').hide(0);
+    	$('#favourites-section').hide(0);
+    	$('#editprofile-section').hide(0);
+    	$('#rented-section').show(1, "linear");
+		$('#rented-section').fadeIn(300);
+
+
+		});
+
+
+
+
+  		$('#show-edit').click(function() {
+  			$('#show-Messages-section').hide(0);
+      $('#rating-section').hide(0)
+    	$('#booksbought-section').hide(0);
+    	$('#favourites-section').hide(0);
+    	$('#rented-section').hide(0);
+    	$('#editprofile-section').show(1,"linear");
+    	$('#editprofile-section').fadeIn(300);
+
+
+		});
+
+
+    var favouriteitem = document.querySelectorAll('.cart-item');
+
+    favouriteitem.forEach(function(ITEM)
+      {
+        if(  ITEM.querySelector('.favourite-btn') != null)
+        {
+
+          ITEM.querySelector('.favourite-btn').addEventListener('click',function(e)
+          {
+
+            if(ITEM.querySelector('.favourite-btn').querySelector('.unfavourite').getAttribute("value") == "liked")
+            {
+
+              removefromfavourites(ITEM);
+            }
+            else
+            {
+              addToFavourites(ITEM);
+            }
+
+
+          },false);
+        }
+
+      });
+
+      function removefromfavourites(item)
+    	{
+
+        var value = item.querySelector('.favourite-btn').querySelector('.unfavourite');
+
+    		value.src = "images/unliked-fav.png";
+        value.setAttribute("value","unliked")
+
+    	}
+      function addToFavourites(item)
+      {
+
+        var value = item.querySelector('.favourite-btn').querySelector('.unfavourite');
+        value.src = "images/liked-fav.png";
+        value.setAttribute("value","liked")
+      }
+
+    </script>
+
+
+    <script>
+    function colorstars(rating,productid) {
+
+      var products = document.querySelectorAll('.recent-order-reviews');
+
+        products.forEach(function(Item) {
+
+          Item.querySelectorAll('.cart-item').forEach(function(ITEM){
+
+            ITEM.querySelectorAll('.product-review').forEach(function(ITEM){
+
+              if( ITEM.getAttribute("id") == "r"+productid)
+              {
+
+                  ITEM.querySelectorAll('.review-icons').forEach(function (ITEM) {
+                    if( ITEM.getAttribute("id")<= rating)
+                    {
+                        ITEM.setAttribute("src","images/star_rated.png")
+                    }
+                  });
+              }
+            });
+          });
+        });
+    }
+    function makeratings( productid, rating){
+
+        colorstars(rating, productid);
+        switch (rating) {
+          case 0:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = "Not rated."
+            break;
+          case 1:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = "Worst,dont buy!"
+                break;
+          case 2:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = "Fine,can try!"
+                break;
+          case 3:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = "Fair, please try!"
+                break;
+          case 4:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = "Really good, should read!"
+                break;
+          case 5:
+                var val = document.getElementById("p"+ productid);
+                val.innerHTML = " Amazing, must try!"
+                break;
+              }
+    }
+
+
+
+
+    var i =1;
+    var products = document.querySelectorAll('.recent-order-reviews');
+      products.forEach(function(Item) {
+        Item.querySelectorAll('.cart-item').forEach(function(ITEM){
+          ITEM.querySelectorAll('.product-review').forEach(function(ITEM){
+            var productid = ITEM.querySelector('.product-item').getAttribute("value");
+            makeratings(productid,i)
+            i++;
+          });
+        });
+      });
+
+
+		</script>
+
+
+
+</body>
+
+</html>
